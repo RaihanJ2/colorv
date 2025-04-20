@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import ColorPalette from "./components/ColorPallete";
 import ExportOptions from "./components/ExportOptions";
 import ColorUploader from "./components/ColorUploader";
-import "./Index.css";
+import "./index.css";
 
 function App() {
   const [colors, setColors] = useState([]);
