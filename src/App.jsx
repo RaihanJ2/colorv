@@ -22,7 +22,7 @@ function App() {
     setError(null);
 
     try {
-      const response = await fetch("http://colormind.io/api/", {
+      const response = await fetch(import.meta.env.API_URL, {
         method: "POST",
         body: JSON.stringify({
           model: "default",
@@ -85,7 +85,7 @@ function App() {
           const sampledColors = sampleColorsFromImage(pixelData);
 
           try {
-            const response = await fetch("http://colormind.io/api/", {
+            const response = await fetch(import.meta.env.API_URL, {
               method: "POST",
               body: JSON.stringify({
                 model: "default",
